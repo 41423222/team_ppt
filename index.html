@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>Git 與 GitHub 介紹簡報</title>
+
+    <!-- Reveal.js 核心與主題樣式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+    <!-- 程式碼高亮 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- 封面 -->
+        <section>
+          <h1>計算機程式學習心得報告</h1>
+          <p>組員：41423222林東言、41423211王柏勛、 41423228徐鵬皓</p>
+            <!-- 日期放右下角 -->
+            <div style="
+              position: absolute;
+              bottom: 20px;
+              right: 30px;
+              font-size: 20px;
+              color: gray;
+            ">
+              2025/10/07
+            </div>
+        </section>
+      
+        <!-- 目錄 -->
+        <section style="text-align:left; vertical-align:top;">
+          <h1>目錄：</h1>
+          <ol>
+            <li>Git?</li>
+            <li>Github?</li>
+            <li>Gist?</li>
+            <li>Cmsimde?</li>
+            <li>為什麼要使用?</li>
+          </ol>
+        </section>
+
+        <!-- Git 介紹 -->
+        <section style="text-align:left; vertical-align:top;">
+          <h2>1.什麼是 Git?</h2>
+          <p>　　Git 是一種版本控制工具，用來記錄程式碼或文件的修改歷史。就像「存檔系統」，可以回到過去版本，也能和別人一起同時開發專案而不會互相覆蓋。</p>
+          <h2>Q:如何使用?</h2>
+          <p>　　在電腦安裝 Git ，解壓縮後，用 git init 建立專案，再用 git add、git commit 來記錄檔案的修改。</p>
+        </section>
+
+        <!-- Github 介紹 -->
+        <section style="text-align:left; vertical-align:top;">
+          <h2>1.什麼是 Github?</h2>
+          <p>　　GitHub 是一個線上的程式碼託管平台，利用 Git 來管理專案。簡單說： GitHub = 程式碼的「社群網站」，你可以把專案放上去，和其他人合作、分享，甚至找實習或工作時也能當作品集。</p>
+          <h2>Q:如何使用?</h2>
+          <p>　　到瀏覽器上面註冊 GitHub 帳號，登入以後，建立專案倉庫(repository)，把本地的 Git 用 git push 上傳。</p>
+        </section>
+
+        <!-- Gist 介紹 -->
+        <section style="text-align:left; vertical-align:top;">
+          <h2>1.什麼是 Gist?</h2>
+          <p>　　Gist 是 GitHub 提供的一個功能，讓你快速分享一小段程式碼或筆記。例如：你寫了一個小範例程式、不想開一個完整專案，就可以用 gist 分享給朋友。</p>
+          <h2>Q:如何使用?</h2>
+          <p>　　登入 GitHub ，點 Gist 並貼上寫好的程式碼，就可以生成連結分享給他人。</p>
+        </section>
+
+        <!-- Gist 介紹 -->
+        <section>
+          <h2>刪</h2>
+          <ul>
+            <li>一個雲端儲存 Git 專案的平台</li>
+            <li>方便分享、協作與開源開發</li>
+            <li>有像社群網站的功能： Star、Fork、Issue</li>
+          </ul>
+        </section>
+
+        <!-- GitHub 使用流程 -->
+        <section>
+          <h2>GitHub 使用流程</h2>
+          <ol>
+            <li>在 GitHub 建立 Repository</li>
+            <li>本地端使用 <code>git clone</code> 複製</li>
+            <li>修改後 <code>git add</code>、<code>git commit</code>、<code>git push</code></li>
+          </ol>
+        </section>
+
+        <!-- 統整 -->
+        <section>
+          <h2>Git + GitHub = 強力組合</h2>
+          <p>Git 負責版本控制，GitHub 負責雲端協作。</p>
+          <p>一起使用可以：</p>
+          <ul>
+            <li>安全備份程式碼</li>
+            <li>輕鬆與他人合作</li>
+            <li>公開展示作品</li>
+          </ul>
+        </section>
+
+        <!-- 結尾 -->
+        <section>
+          <h2>謝謝觀看 🙏</h2>
+          <p>Q&A 時間</p>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Reveal.js 核心程式 -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        plugins: [ RevealHighlight ],
+        transition: 'slide' // 可改為 fade / convex / concave / zoom
+      });
+    </script>
+  </body>
+</html>
